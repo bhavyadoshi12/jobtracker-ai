@@ -1,0 +1,90 @@
+@import "tailwindcss";
+
+@theme {
+  --color-border: hsl(var(--border));
+  --color-input: hsl(var(--input));
+  --color-ring: hsl(var(--ring));
+  --color-background: hsl(var(--background));
+  --color-foreground: hsl(var(--foreground));
+
+  --color-primary: hsl(var(--primary));
+  --color-primary-foreground: hsl(var(--primary-foreground));
+
+  --color-secondary: hsl(var(--secondary));
+  --color-secondary-foreground: hsl(var(--secondary-foreground));
+
+  --color-destructive: hsl(var(--destructive));
+  --color-destructive-foreground: hsl(var(--destructive-foreground));
+
+  --color-muted: hsl(var(--muted));
+  --color-muted-foreground: hsl(var(--muted-foreground));
+
+  --color-accent: hsl(var(--accent));
+  --color-accent-foreground: hsl(var(--accent-foreground));
+
+  --color-popover: hsl(var(--popover));
+  --color-popover-foreground: hsl(var(--popover-foreground));
+
+  --color-card: hsl(var(--card));
+  --color-card-foreground: hsl(var(--card-foreground));
+
+  --radius: 0.75rem;
+}
+
+/* ☀️ PURE LIGHT & PASTEL THEME ☀️ */
+:root {
+  /* Background: Clean White */
+  --background: 0 0% 100%; 
+  /* Text: Very Dark Grey (High Contrast for readability) */
+  --foreground: 240 10% 3.9%;
+
+  /* Cards & Popups: Pure White to pop */
+  --card: 0 0% 100%;
+  --card-foreground: 240 10% 3.9%;
+  --popover: 0 0% 100%;
+  --popover-foreground: 240 10% 3.9%;
+
+  /* Primary Button: Soft Pastel Blue/Indigo */
+  --primary: 221.2 83.2% 53.3%;
+  --primary-foreground: 210 40% 98%; /* White text on button */
+
+  /* Secondary elements: Soft light grey */
+  --secondary: 240 4.8% 95.9%;
+  --secondary-foreground: 240 5.9% 10%;
+
+  /* Muted Text: Medium grey */
+  --muted: 240 4.8% 95.9%;
+  --muted-foreground: 240 3.8% 46.1%;
+
+  /* Hover Accents: Very light greyish-blue */
+  --accent: 240 4.8% 95.9%;
+  --accent-foreground: 240 5.9% 10%;
+
+  /* Destructive (Delete) actions: Soft Red */
+  --destructive: 0 84.2% 60.2%;
+  --destructive-foreground: 0 0% 98%;
+
+  /* 🚨 BORDERS & INPUTS (Crucial for visibility) 🚨 */
+  /* A distinct light grey border so input boxes are clearly visible against white */
+  --border: 240 5.9% 90%;
+  --input: 240 5.9% 90%;
+  /* Focus ring color matching the primary button */
+  --ring: 221.2 83.2% 53.3%;
+
+  /* Rounded corners */
+  --radius: 0.75rem;
+}
+
+/* NOTE: Dark mode remove kar diya hai taaki sirf light theme force ho */
+
+/* Base Styles */
+* {
+  border-color: var(--border); 
+  border-style: solid;
+  border-width: 0;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+}
